@@ -71,10 +71,22 @@ function buildMatrix() {
     // const td = document.createElement('td')
     
     for (let i = 0; i < 10; i++) {
+        //this first one works to do text content
         let cell = document.getElementById(`cell${i}`)
-        cell.textContent = row1[i]
-        //debugger        
+        document.getElementById(`cell${i}`).textContent = row1[i]
+        document.getElementById(`cell${i}`).classList.add(row1[i])
+        cell.classList.add(row1[i])
+        //debugger
+        //trying to figure out how to get the classes to toggle
+        // }
+        
+        
+        //document.getElementById(`cell${i - 1}`).classList.remove(row1[i - 1])
+                
     }
+    //div.classList.toggle("visible", i < 10 )
+}   //close buildMatrix()
+
 
     // the below works, but i think it can be in one loop 
     // document.getElementById('cell0').textContent = row1[0]
@@ -91,10 +103,10 @@ function buildMatrix() {
     //if row.childNodes[]
     //debugger
 
-}
-function boardPiece(){
-    document.getElementById()
-}
+
+//function boardPiece(){
+//     document.getElementById()
+// }
 buildMatrix()
 
 document.addEventListener("keydown", function (e) {
@@ -110,4 +122,4 @@ document.addEventListener("keydown", function (e) {
           //oveDown();
     } 
     }
-  );
+)
